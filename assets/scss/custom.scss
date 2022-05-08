@@ -1,0 +1,16 @@
+@import "../bootsrapVendor/scss/functions";
+@import "../bootsrapVendor/scss/variables";
+@import "../bootsrapVendor/scss/mixins";
+
+//$body-bg: #07162d;
+//$body-color: #111;
+@import "./_baclground.scss";
+
+$custom-colors: (
+  "ak-primary": #213449,
+  "login-color": #a91818,
+);
+//merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import "../bootsrapVendor/scss/bootstrap.scss";
